@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Short link</title>
+      <script>
+         let url_string = window.location.href
+         let url = new URL(url_string);
+         let c = url.searchParams.get("go");
+         console.log(c);
+         if(c) window.location.href = c;
+      </script>
+   </head>
+   <body>
+      <noscript>Sorry, your browser does not support JavaScript!</noscript>
+      <h1>Hello</h1>
+   </body>
+</html>
